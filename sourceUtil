@@ -4,7 +4,7 @@ convert(){
 	docker run --rm \
                 --user $UID:$UID \
 		-v $PWD:/downloads \
-		crea/util \
+		manologcode/terminal_util \
 		convert "$@"
 }
 
@@ -12,7 +12,7 @@ pdftk(){
 	docker run --rm \
                 --user $UID:$UID \
 		-v $PWD:/downloads \
-		crea/util \
+		manologcode/terminal_util \
 		pdftk "$@"
 }
 
@@ -20,7 +20,7 @@ youtube-dl(){
 	docker run --rm \
                 --user $UID:$UID \
                 -v $PWD:/downloads \
-		crea/util \
+		manologcode/terminal_util \
 		youtube-dl "$@"
 }
 
@@ -28,6 +28,6 @@ ffmpeg(){
 	docker run --rm \
                 --user $UID:$UID \
 		-v $PWD:/downloads \
-		crea/util \
+		manologcode/terminal_util \
 		ffmpeg "$@"
 }

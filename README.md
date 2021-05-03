@@ -114,7 +114,7 @@ Pero y si ¿aún sigue siendo muy grande? tenemos otro comando que aún lo reduc
 
 Otro metodo
 
-    gs -dSAFER -dBATCH -dNOPAUSE -q -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -sOutputFile="memoria2014a.pdf" "memoria2014.pdf"
+    gs -dSAFER -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -sOutputFile="memoria2014a.pdf" "memoria2014.pdf"
 
 todo los pdfs de la carpeta
 
@@ -179,7 +179,7 @@ WebM:
 MP4
 
     ffmpeg -i original.mp4 -c:v libx264 -preset slow -s 1024x576 -an -b:v 370K homepage.mp4
-`
+
 # sonido
 
 ## aumentar el volument de archivo

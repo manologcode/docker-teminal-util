@@ -41,13 +41,13 @@ RUN apk add --no-cache inotify-tools imagemagick ghostscript
 RUN apk add --no-cache qpdf
 
 # compile mp3gain
-RUN mkdir -p /tmp/mp3gain-src
-RUN curl -Lo /tmp/mp3gain-src/mp3gain.zip https://sourceforge.net/projects/mp3gain/files/mp3gain/1.6.1/mp3gain-1_6_1-src.zip
-RUN cd /tmp/mp3gain-src
-RUN unzip -qq /tmp/mp3gain-src/mp3gain.zip
-RUN sed -i "s#/usr/local/bin#/usr/bin#g" /tmp/mp3gain-src/Makefile
-RUN make
-RUN make install
+# RUN mkdir -p /tmp/mp3gain-src
+# RUN curl -Lo /tmp/mp3gain-src/mp3gain.zip https://sourceforge.net/projects/mp3gain/files/mp3gain/1.6.1/mp3gain-1_6_1-src.zip
+# RUN cd /tmp/mp3gain-src
+# RUN unzip -qq /tmp/mp3gain-src/mp3gain.zip
+# RUN sed -i "s#/usr/local/bin#/usr/bin#g" /tmp/mp3gain-src/Makefile
+# RUN make
+# RUN make install
 
 
 WORKDIR /downloads
